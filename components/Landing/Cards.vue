@@ -1,0 +1,62 @@
+<template>
+  <VRow>
+    <VCol
+      cols="12"
+      md="6"
+    >
+      <LandingCard
+        :title="$t('landing.nuxtDocsTitle')"
+        href="https://nuxt.com"
+        target="_blank"
+        prepend-icon="mdi-nuxt"
+      >
+        {{ $t('landing.nuxtDocs') }}
+      </LandingCard>
+    </VCol>
+    <VCol
+      cols="12"
+      md="6"
+    >
+      <LandingCard
+        :title="$t('landing.vuetifyDocsTitle')"
+        href="https://vuetifyjs.com"
+        target="_blank"
+        prepend-icon="$vuetify"
+      >
+        {{ $t('landing.vuetifyDocs') }}
+      </LandingCard>
+    </VCol>
+    <VCol
+      cols="12"
+      md="6"
+    >
+      <LandingCard
+        :title="$t('landing.vuetifySassDocsTitle')"
+        href="https://vuetifyjs.com/en/features/sass-variables/#variable-api"
+        target="_blank"
+        prepend-icon="mdi-sass"
+      >
+        <I18nT
+          keypath="landing.vuetifySassDocs"
+        >
+          <template #file>
+            <strong>assets/settings.scss</strong>
+          </template>
+        </I18nT>
+      </LandingCard>
+    </VCol>
+    <VCol
+      cols="12"
+      md="6"
+    >
+      <LandingCard
+        :title="$t('landing.appIgnitionDocsTitle')"
+        href="https://github.com/garrett9/app-ignition-nuxt?tab=readme-ov-file#nuxt-boilerplate-application-for-appignition"
+        target="_blank"
+        prepend-icon="mdi-rocket-launch"
+      >
+        {{ $t('landing.appIgnitionDocs') }}
+      </LandingCard>
+    </VCol>
+  </VRow>
+</template>
